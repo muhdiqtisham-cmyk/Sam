@@ -1,0 +1,8 @@
+{
+  "name": "Remix Money Moves",
+  "description": "The official web edition of Money Moves — an interactive board game about the real financial choices that build or break your bank account.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

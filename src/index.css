@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root {
+  --cream: #F7F3E9;
+  --sand: #EDE6D6;
+  --paper: #FFFDF8;
+  --ink: #1D2B4F;
+  --ink-soft: #4C5A7A;
+  --forest: #1B4332;
+  --forest-deep: #122A22;
+  --gold: #C9A227;
+  --brick: #A63D40;
+  --line: #D8CFBA;
+  --line-strong: #B9AD8E;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--ink);
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-serif {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+.font-mono {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+@keyframes spin-die {
+  0% { transform: rotate(0deg) scale(0.95); }
+  50% { transform: rotate(180deg) scale(1.05); }
+  100% { transform: rotate(360deg) scale(0.95); }
+}
+
+.animate-die {
+  animation: spin-die 0.35s linear infinite;
+}
+
+@keyframes token-pop {
+  0% { transform: scale(1.5); }
+  100% { transform: scale(1); }
+}
+
+.animate-pop {
+  animation: token-pop 0.25s ease-out;
+}
